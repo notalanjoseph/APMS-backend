@@ -1,16 +1,12 @@
-from typing import Optional
-from fastapi import FastAPI, Body, HTTPException, Response, status, Depends, Form
+from fastapi import FastAPI, HTTPException, status, Form
 from fastapi.middleware.cors import CORSMiddleware
 
 import psycopg2
-from pydantic import BaseModel
-from random import randrange
 import psycopg2
-from psycopg2.extras import RealDictCursor
 import time
 
 import os
-from dotenv import load_dotenv
+#from dotenv import load_dotenv
 
 #uvicorn BE.maineon:app
 
@@ -29,7 +25,7 @@ app.add_middleware(
 # Connect to the neon Postgres database
 
 # Load .env file
-load_dotenv()
+#load_dotenv()
 connection_string = os.getenv('DATABASE_URL')
 
 while True:
