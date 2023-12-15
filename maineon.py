@@ -38,7 +38,7 @@ while True:
         print("DB connection failed:\n ", e)
         time.sleep(10)
 
-@app.post('/')
+@app.get('/')
 def test():
     return {"message": "hello world"}
 
