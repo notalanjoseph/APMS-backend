@@ -38,6 +38,9 @@ while True:
         print("DB connection failed:\n ", e)
         time.sleep(10)
 
+@app.post('/')
+def test():
+    return {"message": "hello world"}
 
 @app.post('/login')
 #def login(user_credentials: User):
