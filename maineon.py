@@ -8,7 +8,7 @@ import time
 import os
 #from dotenv import load_dotenv
 
-#uvicorn BE.maineon:app
+#uvicorn maineon:app
 
 app = FastAPI()
 
